@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Arabots </title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Arabots | عربوتس</title>
+
+  <style>
+
+    body {
+
+      font-family: 'Arial', sans-serif;
+
+      margin: 0;
+
+      padding: 0;
+
+      background-color: #f9f9f9;
+
+      color: #333;
+
+      transition: direction 0.3s ease;
+
+    }
+
+    header {
+
+      background-color: #0077b6;
+
+      color: white;
+
+      padding: 20px;
+
+      text-align: center;
+
+    }
+
+    nav {
+
+      background-color: #023e8a;
+
+      padding: 10px;
+
+      text-align: center;
+
+    }
+
+    nav a {
+
+      color: white;
+
+      text-decoration: none;
+
+      margin: 0 15px;
+
+      font-weight: bold;
+
+    }
+
+    .lang-switch {
+
+      float: left;
+
+      margin-left: 20px;
+
+    }
+
+    section {
+
+      padding: 30px;
+
+    }
+
+    .services {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+      gap: 20px;
+
+    }
+
+    .service-box {
+
+      background-color: #ffffff;
+
+      padding: 20px;
+
+      border-radius: 10px;
+
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+      text-align: center;
+
+    }
+
+    footer {
+
+      background-color: #03045e;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 15px;
+
+    }
+
+    input, textarea {
+
+      width: 100%;
+
+      padding: 10px;
+
+      margin-top: 10px;
+
+      margin-bottom: 20px;
+
+      border-radius: 5px;
+
+      border: 1px solid #ccc;
+
+    }
+
+    button {
+
+      background-color: #0077b6;
+
+      color: white;
+
+      border: none;
+
+      padding: 10px 20px;
+
+      border-radius: 5px;
+
+      cursor: pointer;
+
+    }
+
+    button:hover {
+
+      background-color: #005f8c;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1 id="title">عربوتس | Arabots</h1>
+
+    <p id="subtitle">ريادة صناعة الروبوتات في العالم العربي</p>
+
+    <div class="lang-switch">
+
+      <button onclick="switchLang('ar')">العربية</button>
+
+      <button onclick="switchLang('en')">English</button>
+
+    </div>
+
+  </header>
+
+  <nav>
+
+    <a href="#about" id="nav-about">من نحن</a>
+
+    <a href="#services" id="nav-services">خدماتنا</a>
+
+    <a href="#contact" id="nav-contact">تواصل معنا</a>
+
+  </nav>
+
+  <section id="about">
+
+    <h2 id="about-title">من نحن</h2>
+
+    <p id="about-text">
+
+      Arabots هي شركة عربية رائدة في تصميم وتطوير جميع أنواع الروبوتات: الصناعية، الخدمية، التعليمية، الطبية والترفيهية.
+
+      نطمح إلى بناء مستقبل ذكي يخدم الإنسان العربي بالتقنية الحديثة.
+
+    </p>
+
+  </section>
+
+  <section id="services">
+
+    <h2 id="services-title">خدماتنا</h2>
+
+    <div class="services">
+
+      <div class="service-box">
+
+        <h3 id="service1-title">🤖 روبوتات صناعية</h3>
+
+        <p id="service1-desc">أذرع آلية ذكية للمصانع وخطوط الإنتاج</p>
+
+      </div>
+
+      <div class="service-box">
+
+        <h3 id="service2-title">🧹 روبوتات خدمية</h3>
+
+        <p id="service2-desc">للتنظيف، الأمن، التوصيل الذكي</p>
+
+      </div>
+
+      <div class="service-box">
+
+        <h3 id="service3-title">👨‍🏫 روبوتات تعليمية</h3>
+
+        <p id="service3-desc">للطلاب والمدارس لتنمية مهارات البرمجة والتفكير</p>
+
+      </div>
+
+      <div class="service-box">
+
+        <h3 id="service4-title">🏥 روبوتات طبية</h3>
+
+        <p id="service4-desc">مساعدة في العمليات والرعاية الصحية</p>
+
+      </div>
+
+      <div class="service-box">
+
+        <h3 id="service5-title">🎮 روبوتات ترفيهية</h3>
+
+        <p id="service5-desc">روبوتات ذكية للمرح والتفاعل المنزلي</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <h2 id="contact-title">تواصل معنا</h2>
+
+    <form>
+
+      <label id="label-name">الاسم:</label>
+
+      <input type="text" placeholder="اكتب اسمك هنا" required>
+
+      <label id="label-email">البريد الإلكتروني:</label>
+
+      <input type="email" placeholder="example@email.com" required>
+
+      <label id="label-message">رسالتك:</label>
+
+      <textarea rows="5" placeholder="كيف يمكننا مساعدتك؟" required></textarea>
+
+      <button type="submit" id="submit-button">إرسال</button>
+
+    </form>
+
+  </section>
+
+  <footer>
+
+    <p id="footer-text">&copy; 2025 Arabots. جميع الحقوق محفوظة.</p>
+
+  </footer>
+
+  <script>
+
+    const translations = {
+
+      en: {
+
+        title: "Arabots",
+
+        subtitle: "Leading Robotics Innovation in the Arab World",
+
+        nav: { about: "About Us", services: "Services", contact: "Contact" },
+
+        aboutTitle: "About Us",
+
+        aboutText: "Arabots is a leading Arab company in designing and developing all types of robots: industrial, service, educational, medical, and entertainment. We aim to build a smart future for the Arab world using advanced robotics.",
+
+        servicesTitle: "Our Services",
+
+        service1: { title: "🤖 Industrial Robots", desc: "Smart robotic arms for factories and production lines" },
+
+        service2: { title: "🧹 Service Robots", desc: "Cleaning, security, and smart delivery robots" },
+
+        service3: { title: "👨‍🏫 Educational Robots", desc: "For students and schools to teach coding and logic" },
+
+        service4: { title: "🏥 Medical Robots", desc: "Assistive robotics in surgery and healthcare" },
+
+        service5: { title: "🎮 Entertainment Robots", desc: "Fun interactive robots for home use" },
+
+        contactTitle: "Contact Us",
+
+        labelName: "Name:",
+
+        labelEmail: "Email:",
+
+        labelMessage: "Message:",
+
+        submitButton: "Send",
+
+        footerText: "© 2025 Arabots. All rights reserved."
+
+      },
+
+      ar: {
+
+        title: "عربوتس | Arabots",
+
+        subtitle: "ريادة صناعة الروبوتات في العالم العربي",
+
+        nav: { about: "من نحن", services: "خدماتنا", contact: "تواصل معنا" },
+
+        aboutTitle: "من نحن",
+
+        aboutText: "Arabots هي شركة عربية رائدة في تصميم وتطوير جميع أنواع الروبوتات: الصناعية، الخدمية، التعليمية، الطبية والترفيهية. نطمح إلى بناء مستقبل ذكي يخدم الإنسان العربي بالتقنية الحديثة.",
+
+        servicesTitle: "خدماتنا",
+
+        service1: { title: "🤖 روبوتات صناعية", desc: "أذرع آلية ذكية للمصانع وخطوط الإنتاج" },
+
+        service2: { title: "🧹 روبوتات خدمية", desc: "للتنظيف، الأمن، التوصيل الذكي" },
+
+        service3: { title: "👨‍🏫 روبوتات تعليمية", desc: "للطلاب والمدارس لتنمية مهارات البرمجة والتفكير" },
+
+        service4: { title: "🏥 روبوتات طبية", desc: "مساعدة في العمليات والرعاية الصحية" },
+
+        service5: { title: "🎮 روبوتات ترفيهية", desc: "روبوتات ذكية للمرح والتفاعل المنزلي" },
+
+        contactTitle: "تواصل معنا",
+
+        labelName: "الاسم:",
+
+        labelEmail: "البريد الإلكتروني:",
+
+        labelMessage: "رسالتك:",
+
+        submitButton: "إرسال",
+
+        footerText: "© 2025 Arabots. جميع الحقوق محفوظة."
+
+      }
+
+    };
+
+    function switchLang(lang) {
+
+      document.documentElement.lang = lang;
+
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+      const t = translations[lang];
+
+      document.getElementById("title").textContent = t.title;
+
+      document.getElementById("subtitle").textContent = t.subtitle;
+
+      document.getElementById("nav-about").textContent = t.nav.about;
+
+      document.getElementById("nav-services").textContent = t.nav.services;
+
+      document.getElementById("nav-contact").textContent = t.nav.contact;
+
+      document.getElementById("about-title").textContent = t.aboutTitle;
+
+      document.getElementById("about-text").textContent = t.aboutText;
+
+      document.getElementById("services-title").textContent = t.servicesTitle;
+
+      document.getElementById("service1-title").textContent = t.service1.title;
+
+      document.getElementById("service1-desc").textContent = t.service1.desc;
+
+      document.getElementById("service2-title").textContent = t.service2.title;
+
+      document.getElementById("service2-desc").textContent = t.service2.desc;
+
+      document.getElementById("service3-title").textContent = t.service3.title;
+
+      document.getElementById("service3-desc").textContent = t.service3.desc;
+
+      document.getElementById("service4-title").textContent = t.service4.title;
+
+      document.getElementById("service4-desc").textContent = t.service4.desc;
+
+      document.getElementById("service5-title").textContent = t.service5.title;
+
+      document.getElementById("service5-desc").textContent = t.service5.desc;
+
+      document.getElementById("contact-title").textContent = t.contactTitle;
+
+      document.getElementById("label-name").textContent = t.labelName;
+
+      document.getElementById("label-email").textContent = t.labelEmail;
+
+      document.getElementById("label-message").textContent = t.labelMessage;
+
+      document.getElementById("submit-button").textContent = t.submitButton;
+
+      document.getElementById("footer-text").textContent = t.footerText;
+
+    }
+
+  </script>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
